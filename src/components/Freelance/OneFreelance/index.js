@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./index.module.scss";
-import Button from '@/components/Button';
+import Button from '@/components/UI/Button';
 import Loca from '../../../img/localisateur.png';
 import UserContext from "@/context/UserContext";
 import Deroulant from '../../../img/fleche_droite.png';

@@ -1,5 +1,4 @@
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
+import Header from "@/components/partials/Header";
 import styles from "./index.module.scss";
 import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";

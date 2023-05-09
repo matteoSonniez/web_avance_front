@@ -3,9 +3,9 @@ import UserContext from "@/context/UserContext";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import useFetch from "@/hooks/useFetch";
-import Input from "@/components/Input";
-import Button from "@/components/Button/";
-import Notification from "@/components/Notification";
+import Input from "@/components/UI/Input";
+import Button from "@/components/UI/Button/";
+import Notification from "@/components/UI/Notification";
 import Cookies from 'js-cookie';
 import styles from "./index.module.scss";
 

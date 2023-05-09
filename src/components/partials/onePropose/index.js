@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./index.module.scss";
-import Deroulant from '../../img/fleche_droite.png';
-import Button from '@/components/Button';
+import Deroulant from '@/img/fleche_droite.png';
+import Button from '@/components/UI/Button';
 import { useContext, useEffect, useState } from "react";
 import Link from 'next/link';
 

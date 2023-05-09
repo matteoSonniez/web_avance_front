@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from "./index.module.scss";
-import Deroulant from '../../img/fleche_droite.png';
-import Button from '@/components/Button';
+import Deroulant from '@/img/fleche_droite.png';
+import Button from '@/components/UI/Button';
 import { useRouter } from "next/router";
 import useFetch from "@/hooks/useFetch";
 import Edit from "@/img/edition2.png";
 import Delete from "@/img/supprimer.png";
 import { useContext, useEffect, useState } from "react";
 import Cookies from 'js-cookie';
-//import Link from 'next/link';
 
 
 const Index = ({mission, handelClickDecline, handelClickAccepte, freelanceId}) => {

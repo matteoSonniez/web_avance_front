@@ -3,11 +3,11 @@ import UserContext from "@/context/UserContext";
 import { useContext, useEffect, useState } from "react";
 import useFetch from "@/hooks/useFetch";
 import styles from "./index.module.scss";
-import SearchInputs from "@/components/Search";
+import SearchInputs from "@/components/partials/Search";
 import Icon1 from '../img/icon1.svg';
 import Icon2 from '../img/icon2.svg';
 import Icon3 from '../img/icon3.svg';
-import AnimText from "@/components/AnimationText";
+import AnimText from "@/components/UI/AnimationText";
 
 
 export default function Home() {

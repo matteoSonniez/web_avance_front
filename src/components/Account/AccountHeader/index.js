@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from "./index.module.scss";
-import Button from '@/components/Button';
-import Personne from '../../../img/user2.png';
-import Loca from '../../../img/localisateur.png';
-import Modif from '../../../img/editer.png';
+import Personne from '@/img/user2.png';
+import Loca from '@/img/localisateur.png';
+import Modif from '@/img/editer.png';
 
 const Index = ({freelance, user, handleClick}) => {
     return (

@@ -2,9 +2,7 @@ import { useContext } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import UserContext from "@/context/UserContext";
-//import Logo from "../../../../public/images/logo/logo.svg";
-//import NavItem from "@/components/UI/NavItem";
-import Button from "@/components/Button";
+import Button from "@/components/UI/Button";
 import React from 'react';
 import styles from "./index.module.scss";
 

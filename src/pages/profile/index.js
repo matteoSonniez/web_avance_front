@@ -3,9 +3,9 @@ import styles from "./index.module.scss";
 import UserContext from "@/context/UserContext";
 import { useContext, useEffect, useState } from "react";
 import { useRouter } from 'next/router'
-import Modal from "@/components/Modal";
-import Input from "@/components/Input";
-import Button from "@/components/Button";
+import Modal from "@/components/UI/Modal";
+import Input from "@/components/UI/Input";
+import Button from "@/components/UI/Button";
 import useFetch from "@/hooks/useFetch";
 import AccountHeader from "@/components/Account/AccountHeader";
 import AccountMain from "@/components/Account/AccountMain";

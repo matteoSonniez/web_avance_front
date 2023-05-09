@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import styles from "./index.module.scss";
-import Search from '../../img/chercher.png';
-import Filtre from '../../img/filtre.png';
-import Input from "@/components/Inputs";
-import Button from "@/components/Button/";
+import Search from '@/img/chercher.png';
+import Filtre from '@/img/filtre.png';
+import Input from "@/components/UI/Inputs";
+import Button from "@/components/UI/Button";
 
 const Index = ({className}) => {
   const router = useRouter();

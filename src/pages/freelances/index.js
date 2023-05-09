@@ -2,13 +2,13 @@ import React from 'react';
 import { useRouter } from 'next/router'
 import styles from "./index.module.scss";
 import useFetch from "@/hooks/useFetch";
-import SearchInputs from "@/components/Search";
+import SearchInputs from "@/components/partials/Search";
 import FreelanceGrid from "@/components/Freelance/FreelanceGrid";
 import OneFreelance from "@/components/Freelance/OneFreelance";
 import { useContext, useEffect, useState } from "react";
 import Search from '../../img/chercher.png';
-import Input from "@/components/Inputs";
-import AnimText from "@/components/AnimationText";
+import Input from "@/components/UI/Inputs";
+import AnimText from "@/components/UI/AnimationText";
 
 const Index = () => {
     const router = useRouter()

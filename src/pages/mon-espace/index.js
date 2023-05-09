@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import UserContext from "@/context/UserContext";
 import { useContext, useEffect, useState } from "react";
 import useFetch from "@/hooks/useFetch";
-import OnePropose from "@/components/onePropose";
+import OnePropose from "@/components/partials/onePropose";
 import Cookies from 'js-cookie';
 
 const Index = () => {
