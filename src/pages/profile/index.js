@@ -41,7 +41,6 @@ const Index = () => {
     //les use effects
     useEffect(() => {
         setUserForm(user)
-        console.log(user, "userCOMPANYYYY");
         if (user.freelance != undefined) {
             setFreelance_id(user.freelance._id);
         }

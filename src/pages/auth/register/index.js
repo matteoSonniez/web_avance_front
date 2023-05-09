@@ -94,18 +94,12 @@ const Index = () => {
   const submitLogin = (e) => {
     e.preventDefault();
     fetchData();
-    if(error){
-      console.log(error);
-    }
   }
   useEffect(() => {
     if (data.success == true){
       if (data.token) {
-        console.log(data);
         setToken(data.token);
-        //localStorage.setItem('token', data.token);
-        Cookies.set('token_cookie', data.token);
-        //console.log(Cookies.get('token_cookie'));  
+        Cookies.set('token_cookie', data.token); 
       }
     }
   }, [data]);

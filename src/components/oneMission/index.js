@@ -4,6 +4,8 @@ import Deroulant from '../../img/fleche_droite.png';
 import Button from '@/components/Button';
 import { useRouter } from "next/router";
 import useFetch from "@/hooks/useFetch";
+import Edit from "@/img/edition2.png";
+import Delete from "@/img/supprimer.png";
 import { useContext, useEffect, useState } from "react";
 import Cookies from 'js-cookie';
 //import Link from 'next/link';
@@ -17,6 +19,7 @@ const Index = ({mission, handelClickDecline, handelClickAccepte, freelanceId}) =
     const [flecheDirection, setFlecheDirection] = useState("fleche_close");
 
     const {data: propose, error:proposeError, loading:loadingPropose, fetchData:fetchPropose} = useFetch({url:`proposition/create/${mission._id}`, method:"POST", body:{"freelance": `${freelanceId}`}, token:token})
+    const {data: missionDelete, error:missionDeleteError, loading:loadingMissionDelete, fetchData:fetchMissionDelete} = useFetch({url:`proposition/create/${mission._id}`, method:"POST", body:{"freelance": `${freelanceId}`}, token:token})
 
     const open = (e) => {
         setFlecheDirection(flecheDirection === "fleche_close" ? "fleche_open" : "fleche_close");
@@ -62,6 +65,10 @@ const Index = ({mission, handelClickDecline, handelClickAccepte, freelanceId}) =
                         <div className={styles.amount}>
                             <text>{mission.amount} €</text>
                         </div>
+                    </div>
+                    <div className={styles.buttons}>
+                        <img src={Edit.src}></img>
+                        <img src={Delete.src}></img>
                     </div>
                 </div>
             }

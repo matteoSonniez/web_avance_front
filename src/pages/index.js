@@ -13,7 +13,6 @@ import AnimText from "@/components/AnimationText";
 export default function Home() {
   const router = useRouter();
   const { user, isLogged, logout } = useContext(UserContext);
-  console.log(user, "USER!!!!!!!!!!!")
 
   return (
     <div className={styles.center}>

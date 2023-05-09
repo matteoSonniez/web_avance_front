@@ -24,7 +24,6 @@ const MainLayout = ({ children }) => {
   const [mainClass, setMainClass] = useState("right__part2");
   const router = useRouter();
   const { isLogged, user, updateUser } = useContext(UserContext);
-  console.log(isLogged);
 
   const logout = (e) => {
     Cookies.remove('token_cookie');

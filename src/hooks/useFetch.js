@@ -28,7 +28,6 @@ const useFetch = ({ url, method, body, token }) => {
       setData(dataJson);
     }
     catch (error) {
-      console.log(error)
       setError(error)
     }
     finally {

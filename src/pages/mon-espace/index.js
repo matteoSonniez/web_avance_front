@@ -60,10 +60,6 @@ const Index = () => {
         }
     }, [proposeId]);
 
-    useEffect(() => {
-        console.log(propositionsPending,"bonnnnnnnnnnnnnn")
-    }, [propositionsPending]);
-
 
     useEffect(() => {
         if (propositions.propositions != null) {

@@ -62,8 +62,6 @@ export const UserContextProvider = ({ children }) => {
   }
   const updateUserCompany = (data) => {
     user.company = data.company;
-    console.log(data.company,"DATAAAAA")
-    console.log(user.company,"DATAAAAA COMPANY")
   }
 
   const context = {

@@ -34,16 +34,6 @@ const Index = () => {
     }, [token]);
 
     useEffect(() => {
-        console.log(freelanceId, "FREELANCEIDDDD");
-    }, [freelanceId]);
-
-    useEffect(() => {
-        if(missions != null) {
-            console.log(missions, "missionnnnnnn");
-        }
-    }, [missions]);
-
-    useEffect(() => {
         if (missionCreated.success == true) {
             setIsOpen(false);
             fetchMissions();
@@ -121,6 +111,9 @@ const Index = () => {
                 <div onClick={() => {setIsOpen(true)}} className={styles.add_mission}>
                     <img src={AddImage.src}></img>
                 </div>
+                {missions.missions.length == 0 &&
+                    <text>pas de mission pour le moment </text>
+                }
                 {missions.missions.map((mission) => (
                     <OneMisson freelanceId={freelanceId} mission={mission}></OneMisson> 
                 ))}

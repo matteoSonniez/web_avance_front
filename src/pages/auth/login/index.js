@@ -42,7 +42,6 @@ const Index = () => {
 
   useEffect(() => {
     if (user.success == true) {
-      console.log(user, "test ajout FREELANCEEEEEE");
       login(user.user);
       router.push('/');
     }
