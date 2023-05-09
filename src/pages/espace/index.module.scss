@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+
+.body {
+    margin:0;
+    .patterns {
+        height: 100vh;
+      }
+      svg text {
+        font-family: 'inter';
+        letter-spacing: 10px;
+        stroke: #A084DC;
+        font-size: 150px;
+        font-weight: 700;
+        stroke-width: 3;
+        animation: textAnimate 8s infinite alternate;
+        
+      }
+      
+      @keyframes textAnimate {
+        0% {
+          stroke-dasharray: 0 50%;
+          stroke-dashoffset:  20%;
+          fill:hsl(0, 0%, 0%)
+      
+        }
+        
+        100% {
+          stroke-dasharray: 50% 0;
+          stroke-dashoffset: -20%;
+          fill: hsla(189, 68%, 75%,0%)
+        }
+        
+      }
+ }
+ 

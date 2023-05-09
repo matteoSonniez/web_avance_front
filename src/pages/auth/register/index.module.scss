@@ -1,0 +1,33 @@
+.the_radios {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    h1 {
+        font-size: 25px;
+        margin-bottom: 50px;
+        font-weight: 600;
+        color: #7a6bea;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .the_inputs {
+            display: flex;
+            .first_info {
+                margin-right: 15px;
+            }
+        }
+        .company_form {
+            display: flex;
+        }
+    }
+}

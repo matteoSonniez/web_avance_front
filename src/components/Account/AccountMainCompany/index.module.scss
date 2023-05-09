@@ -1,0 +1,89 @@
+.all_account {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin-top: 25px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    color: gray;
+    .user_info {
+        width: 35%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        .all_info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            .trait {
+                width: 89%;
+                margin-left: 6%;
+                height: 1px;
+                background-color: #DBD5D5;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .one_info {
+                width: 90%;
+                display: flex;
+                margin-left: 6%;
+                .title_info {
+                    width: 120px;
+                    font-weight: 600;
+                }
+                .info {
+                    width: 330px;
+                    margin-left: 10px;
+                }
+              } 
+        }      
+    }
+    .company_info {
+        width: 63%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        .all_info {
+            display: flex;
+            flex-direction: column;
+            .other_info {
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                .trait {
+                    width: 89%;
+                    margin-left: 6%;
+                    height: 1px;
+                    background-color: #DBD5D5;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+                .one_info {
+                    width: 90%;
+                    display: flex;
+                    margin-left: 6%;
+                    .title_info {
+                        width: 160px;
+                        font-weight: 600;
+                    }
+                    .info {
+                        width: 400px;
+                        margin-left: 20px;
+                    }
+                  } 
+            } 
+            .company_name {
+                font-weight: 600;
+                font-size: 25px;
+                padding: 28px 40px;
+            }
+            .trait {
+                width: 89%;
+                margin-left: 5%;
+                height: 1px;
+                background-color: #DBD5D5;
+                
+            }
+        }
+    }
+}

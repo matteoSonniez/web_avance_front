@@ -1,0 +1,30 @@
+.search_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter';
+    .title_div {
+        display: flex;
+        width: 45%;
+        margin-top: 7%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        .title {
+            font-size: 91.5px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;                
+            letter-spacing: -.05em;
+            line-height: 112%;
+        }
+    }
+}
+.freelance_grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

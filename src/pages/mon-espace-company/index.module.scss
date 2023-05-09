@@ -1,0 +1,28 @@
+.all_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    .add_mission {
+        width: 900px;
+        border: 1px solid #BFACE2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        background-color: white;
+        padding: 20px 0;
+        height: 50px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        img {
+            width: 45px;
+            transition-duration: 100ms;
+            &:hover {
+                transition-duration: 100ms;
+                width: 48px;
+            }
+        }
+    }
+}

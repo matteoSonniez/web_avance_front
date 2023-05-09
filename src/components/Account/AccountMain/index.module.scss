@@ -1,0 +1,101 @@
+.all_account {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin-top: 25px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    color: gray;
+    .user_info {
+        width: 35%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        .all_info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            .trait {
+                width: 89%;
+                margin-left: 6%;
+                height: 1px;
+                background-color: #DBD5D5;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .one_info {
+                width: 90%;
+                display: flex;
+                margin-left: 6%;
+                .title_info {
+                    width: 120px;
+                    font-weight: 600;
+                }
+                .info {
+                    width: 330px;
+                    margin-left: 10px;
+                }
+              } 
+        }      
+    }
+    .freelance_info {
+        width: 63%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        .all_info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin: 35px;
+            .actity_name {
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .trait {
+                width: 95%;
+                height: 1px;
+                background-color: #DBD5D5;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .other_info {
+                margin-top: 20px ;
+                display: flex;
+                justify-content: space-between;
+                .skills {
+                    width: 60%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .one_skill {
+                        color: white;
+                        padding: 5px 15px;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        border-radius: 5px;
+                        background-color: #BFACE2;
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    width: 35%;
+                    .collum {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 30px;
+                        .title_info {
+                            margin-bottom: 8px;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .info {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

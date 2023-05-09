@@ -1,0 +1,40 @@
+.all_page {
+    display: flex;
+    flex-direction: column;
+    font-family: 'inter';
+    .one_part {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        .btn {
+            padding: 0px 20px;
+        }
+        .title {
+            font-size: 25px;
+            padding: 20px 20px;
+            font-weight: 600;
+            color: grey;
+        }
+        .all_info {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 20px;
+            .info {
+                display: flex;
+                align-items: center;
+                padding: 8px 12px;
+                margin-right: 20px;
+                margin-bottom: 15px;
+                color: grey;
+                background-color: white;
+                border: 1px solid grey;
+                font-size: 18px;
+                img {
+                    width: 20px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .back_image_left {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: -1;
+        max-width: 31vw;
+    }
+    .back_image_right {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        z-index: -1;
+        max-width: 31vw;
+    }
+}

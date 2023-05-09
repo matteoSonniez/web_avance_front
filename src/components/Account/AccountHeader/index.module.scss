@@ -1,0 +1,91 @@
+.all_header{
+    position: relative;
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    color: gray;
+    .modif {
+        position: absolute;
+        top: 50px;
+        right: 60px;
+        display: flex;
+        align-items: center;
+        color: #645CBB;
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            margin-right: 6px;
+            width: 20px;
+        } 
+    }
+    .account_image{
+        width: 220px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 110px;
+        overflow:  hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .account_info{
+        margin-top: 40px;
+        width: 400px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        .job {
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        img {
+            width: 20px;
+        }
+        .all_names {
+            display: flex;
+            align-items: center;
+            .names {
+                font-size: 30px;
+                font-weight: 800;
+                margin-bottom: 8px;
+            }
+
+        }
+        .loca {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 400;
+            .address {
+                margin-left: 5px;
+            }
+        }
+        .other_info {
+            display: flex;
+            color: black;
+            margin-top: 35px;
+            .xp {
+                width: 140px;
+                border-radius: 10px;
+                margin-right: 10px;
+                padding: 10px;
+                border: 1px solid #BFACE2;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                .titre {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

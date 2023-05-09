@@ -1,0 +1,105 @@
+.one_mission {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px 0;
+    //box-shadow: rgba(29, 28, 28, 0.35) 0px 5px 15px;
+    font-family: "inter";
+    overflow: hidden;
+    height: 50px;
+    transition: height 0.5s ease;
+    &__open {
+        //padding: 20px;
+        height: 200px;
+    }
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    &:hover {
+      //transition-duration: 1700ms;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        margin-left: 25px;
+        .fleche_open {
+            transition-duration: 700ms;
+            transform: rotate(90deg);
+            width: 15px;
+            height: 15px;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+        .fleche_close {
+            transition-duration: 700ms;
+            transform: rotate(0deg);
+            width: 15px;
+            height: 15px;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+        .info {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: baseline;
+            .names {
+                width: 200px;
+                color: gray;
+                font-weight: 700;
+                font-size: 20px;
+                margin-right: 75px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .dates {
+                width: 250px;
+                font-weight: 500;
+                font-size: 17px;
+                margin-right: 70px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .buttons {
+                display: flex;
+                width: 250px;
+                align-items: center;
+                justify-content: space-between;
+                .link_refused {
+                    color: black;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            } 
+        }
+    }
+    .all_amount {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .amount {
+            padding: 8px 12px;
+            font-weight: 600;
+            font-size: 17px;
+        } 
+    } 
+    .other_info {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 65px;
+        color: gray;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        .company {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+}

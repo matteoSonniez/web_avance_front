@@ -1,0 +1,57 @@
+import { useRouter } from "next/router";
+import UserContext from "@/context/UserContext";
+import { useContext, useEffect, useState } from "react";
+import useFetch from "@/hooks/useFetch";
+import styles from "./index.module.scss";
+import ImageHome from '../img/image_home.jpg';
+import Search from '../img/chercher.png';
+import Input from "@/components/Inputs";
+import Button from "@/components/Button/";
+import SearchInputs from "@/components/Search";
+import Freelance from '../img/freelance.png';
+import Accord from '../img/accord.png';
+import Company from '../img/start-up.png';
+
+
+
+export default function Home() {
+  const router = useRouter();
+  
+
+  return (
+    <div className={styles.center}>
+      <div className={styles.all_home}>
+        <div className={styles.all_title}>
+          <div className={styles.div_image}>
+            <img src={ImageHome.src}></img>
+          </div>
+          <div>
+            <h3 className={styles.title}>Ceci est un message de test pour le titre de la page home
+            </h3>
+            <text className={styles.sous_title}>ceci est un message de test pour le titre de la page home
+            </text>
+          </div>
+        </div>
+       
+        <SearchInputs className="search"></SearchInputs>
+        <div className={styles.text_icon}>
+          <text>Plus de 150k utilisateurs dans le monde</text>
+        </div>
+        <div className={styles.all_icons}>
+          <div className={styles.one_icon}>
+            <img className={styles.icon_image} src={Accord.src}></img>
+            <text>10k accords passés</text>
+          </div>
+          <div className={styles.one_icon}>
+            <img className={styles.icon_image} src={Freelance.src}></img>
+            <text>150k freelances</text>
+          </div>
+          <div className={styles.one_icon}>
+            <img className={styles.icon_image} src={Company.src}></img>
+            <text>25k entreprises</text>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
